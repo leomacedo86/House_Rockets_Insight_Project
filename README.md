@@ -25,7 +25,7 @@ O Case foi desenvolvido em um Jupyter Notebook, em linguagem Python.
 
 Foi utilizado a metodologia Crisp-DM, com o primeiro ciclo priorizado para entender e aprender com os dados, á partir dá análise realizada apresentar os insights para a área desejada.
 
-A entrega foi realizada em um dashboard com as principais insights dos dados e com as informações dos imóveis indicados para a compra no [Tableau]
+A entrega foi realizada em um dashboard no Tableau com as principais insights dos dados e com as informações dos imóveis indicados para a compra para que a diretoria possa acompanhar os imóveis.
 
 Posteriormente, ficando aberto para um segundo ciclo e suas melhorias.
 
@@ -59,8 +59,6 @@ sqft_lot15	|Medida (em pés quadrado) dos lotes de terra dos 15 vizinhos mais pr
 
   * Descrição das features criadas
   
-  		price_median	percent_diff_price_median	action	sales_suggestion	best_season_for_sale	group	renovation_price	suggested reform	expected_profit
-
 Atributos   | Descrição
 ------------|------------------
 basement        |Se a casa possui porão
@@ -82,6 +80,38 @@ renovation_price   |Valor final de venda após reforma ou não do imóvel
 suggested_reform   |Indicação se o imóvel deve ser reformado
 expected_profit    |Lucro esperado do imóvel
 
+## Premissas do negócio
 
+* Os dados de venda são dos anos de 2014 e 2015.
+* Imóveis com dados desproporcionais foram excluídos, entendendo que tiveram inputs manuais e com erros.
+* Temos 21.436 imóveis disponíveis para venda.
+* Para compra do imóvel, foi definido a seguite condição:
+     *Imóveis que estejam com preço de venda á partir de 15% abaixo da mediana de cada zipcode e com condições acima de 2.
+     *Foram encontrados 6.728 imóveis indicados para compra.
+
+## Hipóteses do negócio
+
+- **1.** O ZipCode pode influenciar no valor do imóvel ?
+- **2.** Casas com vista privilegiada são 40% mais caras que na média ?
+- **3.** Casas com vista para a água são 50% mais caras que na média ?
+- **4.** O Preço dos imóveis ficaram mais caros no decorrer dos anos ?
+- **5.** O dia da semana tende a influenciar na venda dos imóveis ?
+- **6.** A estãção do ano tende a influenciar na venda do imóvel ?
+- **7.** Imóveis vendidos no inverno são 30% mais baratos do que no verão, em média ?
+- **8.** Imóveis vendidos em semana de feriados são mais caros que a média, se sim quantos % são mais caros ?
+- **9.** Semana de feriado pode influenciar na venda de imóveis ?
+- **10.** Imóves com mais andares são 30% mais caros ?
+- **11.** Imóveis com porão são 30% mais caros ?
+- **12.** Imóveis com data de contrução menos que 1970 são 30% mais baratos ?
+- **13.** Imóveis com data de reforma maior que 1980 são 50% mais caros ?
+- **14.** Imóveis com maior número de quarto são 40% mais caros ?
+- **15.** Imóveis com maior número de banheiros são 40% mais caros ?
+- **16.** A condição pode influenciar na venda de imóvel ?
+- **17.** Casas em condições muito boas são 60% mais caras, na média ?
+- **18.** Casa em condições fracas são 60% mais baratas, na média ?
+- **19.** Casas que foram reformadas tendem a terem as melhores condições ?
+- **20.** Casas com menor grau de construção, são 50% mais baratas, na média ?
+
+### Principais Insights
 
 
