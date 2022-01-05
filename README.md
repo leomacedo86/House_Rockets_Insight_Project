@@ -133,18 +133,18 @@ expected_profit    |Lucro esperado do imóvel
 
 **1 - Quais casas o CEO da House Rocket deveria comprar e por qual preço de compra?**
 
-    * Os imóveis foram agrupado pelo CEP, e criado uma variável com mediana dos preços de venda de cada CEP.
+   * Os imóveis foram agrupado pelo CEP, e criado uma variável com mediana dos preços de venda de cada CEP.
    
    * Conforme em análise em hipóteses anteriores, foi verificado que a maioria dos imóveis que foram reformados estavam com nota acima de 3 nas condições, pensando em um possível custo de reforma nesses imóveis para melhorar suas condições e obtermos um lucro, foi direcionado para uma avaliação de compra das casas, os imóveis que estejam 15% abaixo da mediana de cada zipcode e com condições acima de 2.
     
-    * Foi criado uma variável indicando se o imóveis deveria sr comprado conforme premissas assumidas nas análises.
+   * Foi criado uma variável indicando se o imóveis deveria sr comprado conforme premissas assumidas nas análises.
 
 **2 - Uma vez a casa em posse da empresa, qual o melhor momento para vendê-las e qual seria o preço da venda?**
 
-      * Com as informações atuais em mãos foi criado uma feature denominada sales_suggestion com uma meta de ganho de 30% em relação aos imóveis adquiridos que estejam em condições acima de 3, e para os imóveis com condições abaixo de 2 foi sugerido um ganho de 20%.      
+   * Com as informações atuais em mãos foi criado uma feature denominada sales_suggestion com uma meta de ganho de 30% em relação aos imóveis adquiridos que estejam em condições acima de 3, e para os imóveis com condições abaixo de 2 foi sugerido um ganho de 20%.      
      
-     * Para definir o melhor momento para a venda, com as datas e períodos que temos no dataframe. Foi assumido a premissa de definir a melhor temporada para venda conforme a estação do ano, comparando as medianas de vendas de cada estação do ano por zipcode, e qual a estação que teve a maior mediana para cada Zipcode, foi considerada como a melhor temporada para venda.
+   * Para definir o melhor momento para a venda, com as datas e períodos que temos no dataframe. Foi assumido a premissa de definir a melhor temporada para venda conforme a estação do ano, comparando as medianas de vendas de cada estação do ano por zipcode, e qual a estação que teve a maior mediana para cada Zipcode, foi considerada como a melhor temporada para venda.
 
-**3 - A House Rocket deveria fazer uma reforma para aumentar o preço da venda? Quais seriam as sugestões de mudanças? Qual o incremento no preço dado por cada opção de reforma? 
+**3 - A House Rocket deveria fazer uma reforma para aumentar o preço da venda? Quais seriam as sugestões de mudanças? Qual o incremento no preço dado por cada opção de reforma?**
 
 
