@@ -1,3 +1,6 @@
+
+<img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/capa.jpg" alt="image">
+
 # 1.O Problema
 A House Rocket é uma plataforma digital que tem como modelo de negócio, a compra e a venda de imóveis usando tecnologia.
 
