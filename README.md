@@ -1,4 +1,4 @@
-
+# Projeto de Insights: House Rocket
 <img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/capa.jpg" alt="image">
 
 # 1.O Problema
@@ -89,8 +89,8 @@ expected_profit    |Lucro esperado do imóvel
 * Imóveis com dados desproporcionais foram excluídos, entendendo que tiveram inputs manuais e com erros.
 * Temos 21.436 imóveis disponíveis para venda.
 * Para compra do imóvel, foi definido a seguite condição:
-     *Imóveis que estejam com preço de venda á partir de 15% abaixo da mediana de cada zipcode e com condições acima de 2.
-     *Foram encontrados 6.728 imóveis indicados para compra.
+     *Imóveis que estejam com preço de venda á partir de 15% abaixo da mediana de cada zipcode e com condições acima de 1.
+     *Foram encontrados 6.752 imóveis indicados para compra.
 
 ## Hipóteses do negócio
 
@@ -116,5 +116,32 @@ expected_profit    |Lucro esperado do imóvel
 - **20.** Casas com menor grau de construção, são 50% mais baratas, na média ?
 
 ### Principais Insights
+
+<img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/H1.png" alt="image" width="2000">
+
+<img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/H5.png" alt="image" width="2000">
+
+<img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/H14.png" alt="image" width="2000">
+
+<img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/H15.png" alt="image" width="2000">
+
+<img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/H16.png" alt="image" width="2000">
+
+<img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/H17.png" alt="image" width="2000">
+
+# 4.Questões do Negócio
+
+**1 - Quais casas o CEO da House Rocket deveria comprar e por qual preço de compra? 
+
+    * Os imóveis foram agrupado pelo CEP, e criado uma variável com mediana dos preços de venda de cada CEP.
+    * Conforme em análise em hipóteses anteriores, foi verificado que a maioria dos imóveis que foram reformados estavam com nota acima de 3 nas condições, pensando em um possível custo de reforma nesses imóveis para melhorar suas condições e obtermos um lucro, foi direcionado para uma avaliação de compra das casas, os imóveis que estejam 15% abaixo da mediana de cada zipcode e com condições acima de 2.
+    * Foi criado uma variável indicando se o imóveis deveria sr comprado conforme premissas assumidas nas análises.
+
+**2 - Uma vez a casa em posse da empresa, qual o melhor momento para vendê-las e qual seria o preço da venda? 
+
+      * Com as informações atuais em mãos foi criado uma feature denominada sales_suggestion com uma meta de ganho de 30% em relação aos imóveis adquiridos que estejam em condições acima de 3, e para os imóveis com condições abaixo de 2 foi sugerido um ganho de 20%.      
+      * Para definir o melhor momento para a venda, com as datas e períodos que temos no dataframe. Foi assumido a premissa de definir a melhor temporada para venda conforme a estação do ano, comparando as medianas de vendas de cada estação do ano por zipcode, e qual a estação que teve a maior mediana para cada Zipcode, foi considerada como a melhor temporada para venda.
+
+**3 - A House Rocket deveria fazer uma reforma para aumentar o preço da venda? Quais seriam as sugestões de mudanças? Qual o incremento no preço dado por cada opção de reforma? 
 
 
