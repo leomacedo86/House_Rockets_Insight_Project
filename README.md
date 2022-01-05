@@ -1,4 +1,4 @@
-# O Problema
+# 1.O Problema
 A House Rocket é uma plataforma digital que tem como modelo de negócio, a compra e a venda de imóveis usando tecnologia.
 
 Como Data Scientist, vou análisar o Dataset para encontrar as melhores oportunidades de negócio no mercado de imóveis. O CEO da House Rocket gostaria de maximizar a receita da empresa encontrando boas oportunidades de negócio.
@@ -20,7 +20,7 @@ O conjunto de dados que representam o contexto está disponível na plataforma d
 
 Esse conjunto de dados contém casas vendidas entre Maio de 2014 e Maio de 2015. Você usará esses dados para desenvolver sua solução.
 
-# Desenvolvimento e Entrega
+# 2.Desenvolvimento e Entrega
 O Case foi desenvolvido em um Jupyter Notebook, em linguagem Python.
 
 Foi utilizado a metodologia Crisp-DM, com o primeiro ciclo priorizado para entender e aprender com os dados, á partir dá análise realizada apresentar os insights para a área desejada.
@@ -29,7 +29,7 @@ A entrega foi realizada em um dashboard com as principais insights dos dados e c
 
 Posteriormente, ficando aberto para um segundo ciclo e suas melhorias.
 
-# Exploração dos dados
+# 3.Exploração dos dados
 
   * Descrição dos atributos do Dataset original
 
@@ -58,4 +58,30 @@ sqft_livining15	|Medida (em pés quadrado) do espaço interno de habitação par
 sqft_lot15	|Medida (em pés quadrado) dos lotes de terra dos 15 vizinhos mais próximo
 
   * Descrição das features criadas
+  
+  		price_median	percent_diff_price_median	action	sales_suggestion	best_season_for_sale	group	renovation_price	suggested reform	expected_profit
+
+Atributos   | Descrição
+------------|------------------
+basement        |Se a casa possui porão
+renovated	    |Se a casa foi reformada
+sale_day	    |dia da venda
+sale_month   |Mês da venda
+sale_year    |Ano da Venda
+sale_week_of_year  |Número da semana do ano, em que o imóvel foi vendido
+sale_day_name      |Dia da semana em que o imóvel foi vendido
+holyday_sale       |Se a venda ocorreu em algum feriado
+holyday_week       | Se foi vendido em uma semana de feriado
+season             |Estação do ano em que o imóvel foi vendido
+price_median       |Mediana do preço conforme o CEP
+Action             |Indicação se o imóvel deve ser comprado
+sales_suggestion   |Sugestão de preço de venda
+best_season_for_sale |Melhor temporada para venda
+group              |Grupo em que o imóvel pertencer, conforme as suas condições
+renovation_price   |Valor final de venda após reforma ou não do imóvel
+suggested_reform   |Indicação se o imóvel deve ser reformado
+expected_profit    |Lucro esperado do imóvel
+
+
+
 
