@@ -147,4 +147,23 @@ expected_profit    |Lucro esperado do imóvel
 
 **3 - A House Rocket deveria fazer uma reforma para aumentar o preço da venda? Quais seriam as sugestões de mudanças? Qual o incremento no preço dado por cada opção de reforma?**
 
+  * Para definir em como avaliar uma melhor visão para uma possível reforma, foi feita uma análise de correlação das variáveis do dataset com a variável preço.
+  * Conseguimos dentificar que 5 variáveis possuem um forte correlação com o preço: sqft_living, grade,sqft_above , sqft_living15, bathrooms.
+  * Com a variável que retorna a diferença em percentual do valor do imóvel em relação a mediana de cada CEP, criamos 10 grupos de casas.
+  * Com os grupos criados, e com as variáveis que mais impactam no preço, foi verificado a mediana das características de cadas grupo e criado uma feature increment, para verificarmos o percentual de aumento de preço para cada subgrupo:
+  
+  <img src="https://github.com/leomacedo86/House_Rockets_Insight_Project/blob/main/Images/groups.png" alt="image" width="2000">
+  
+  * Com os grupos criados, conseguimos ver as medianas dos valores indicados para cada condição relacionada com o aumento de preços nas vendas. Para avaliar uma possível reforma no imóvel, foi criado uma condição para que em cada grupo possamos ver se ele tem variáveis iguais aos 3 grupos acimas, pois assim, pode-se avaliar a construção de novos cômodos, melhorias na casa, para que ela possa se enquadrar em um grupo acima e incrementarmos o valor da venda. Junto foi criado uma feature "suggested reform" que receberá sim ou não como reforma, e uma feature "renovation_price", que irá receber o novo valor indicado de venda conforme a reforma do grupo posterior.
+  
+  
+# 4. Resultados Financeiros
 
+Indicador   | Valores
+------------|------------------
+Casas selecionadas        |6.752 imóveis
+Valor máximo investido	    |US$ US$2,418,274,205.00
+Valor máximo esperado de vendas sem reformar os imóveis |US$3,143,756,466.50
+Com as reformas indicadas esperamos um valor máximo de vendas|US$3,178,652,413.48
+Incremento vendas com as reformas |US$34,895,946.98
+Lucro esperado |US$760,378,208.48
